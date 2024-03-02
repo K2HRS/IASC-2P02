@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment 1</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--three.js importmap-->
+    <script type ="importmap">
+        {
+            "imports": {
+                "three": "https://ga.jspm.io/npm:three@0.158.0/build/three.module.js",
+                "OrbitControls": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.1/dist/lil-gui.esm.js"
+            }
+        }
+    </script>
+
+    <!-- three.js scene-->
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <h1>Interactive Essay</h1>
+    <h2>Kieran Cassar</h2>
+
+    <!-- part one -->
+    <section id="part-one">
+        <h2>1. Flatness</h2>
+
+        <p>Within the dark confines of the cave appears to be a floating object. The cave dwellers stare at it in wonder and awe. The object in question has no beginning and no end. It is constantly moving, changing its shape in ways that seem inconceivable. Continuously, this strange object moves back and forth, constantly monitoring and on watch. It doesn’t allow for the mind to rest, creating anxiety, not allowing one to gaze away from it. Its presence is almost hypnotising. As the object continues with its repetitive motions, it disappears. Then, after a second or so, it appears once more. Suddenly, as the object continues on its repetitive path, the cave dwellers begin to see their world <span class="clickable" id="first-change">shrink and expand, </span>like it is consuming itself. Just like the movement of the unknown object, the world performs this in a repetitive manner, continuously going through the same process over and over again. Just as the cave dwellers are put into another trance, the world changes form again and <span class="clickable" id="second-change">chases after the unknown object. </span>The world follows the object’s path and consumes it. However, the object eventually escapes and the process is repeated. It evokes a sense of insanity, a never ending cycle.</p>
+
+        <p>When something is referred to as “flat”, it can be due to many of its characteristics. The appearance of something could be rather dull and uninspired, conforming to modern trends with no sign of creativity. One’s personality could be bland uninteresting with little to make them unique, nothing for them to stand out as their own person. Flatness can also be defined as having a lack of information, such as that present with the people dwelling in the cave. Without receiving all the necessary information, the brain does not posses the ability to make sense of things, perceiving things without taking in all of their qualities, thus becoming “flat”. With no further details or input, one will be stuck in this loop. With that of the cave dwellers, they cannot perceive the twisting and depth of the unknown object. They believe everything is together as one, with no concept of separateness or independence. Even details such as colour, size, and motion are lost due to their skewed and flat view of reality. They are unable to see the bigger picture and view the world in a new unflattened perspective.</p>
+        
+        <p><span class="clickable" id="continue-reading">Continue reading</span></p>       
+    </section>
+
+    <!-- part two -->
+    <section id="part-two" class="hidden">
+        <h2>2. Seeing Double</h2>
+
+        <p>When stepping back and viewing the world from outside the cave, one can discover what the cave dwellers are really experiencing. Firstly, the objects on the cave wall are not physical objects but rather shadows casted via a light source behind them. With the added third dimension, it is now observable that the unknown object is not changing its shape but rather rotating. Also, the object and box were not phasing through each other, as one was actually in front of the other. When the object moved it wasn’t disappearing but rather moving behind a box that was in front of it, preventing its shadow from reaching the cave. Then, when it passed by the box, its shadow would appear again making it seem as if it were vanishing and then coming back. In terms of the box, when it began to shrink and expand, in reality it was only rotating. Due to the box not being a perfect cube, as it rotated, its shadow would change shape making it appear to grow and shrink.  If the box were to move away from the light source entirely, it would look to the cave dwellers as if it <span class="clickable" id="third-change">suddenly disappeared. </span>Similarly, if it were to cover the light source instead, its shadow would <span class="clickable" id="fourth-change">“consume” the entire cave wall, </span>ending the cave dweller’s world and shrouding them in darkness.  </p>
+
+        <p>
+            Seeing double is how one is able to understand these examples and view the bigger overall picture. The cave dwellers have their own perspective of the cave where they can only make out two dimensions. If you were outside the cave with your back facing the cave dwellers, you would observe three dimensions and take in the events differently. For example, the cave dwellers observe an object disappearing and reappearing whereas outside the cave, one would see a light with an object moving back and forth behind a box. If they were both told what each other were seeing they would have no way of understanding how the different views were possible as they are missing out on details to come to such a conclusion. When both views are combined into one, it is visible that the two views where a part of a larger independent process. Due to the light source, shadows of the object were cast to the cave wall and the act of the object moving behind the box made it appear as if their shadows were phasing through one another. Once someone is able to understand what is really happening, both perspectives being to make sense and reveal the truth of the situation. 
+        </p>
+
+        <p><span class="clickable" id="restart">Restart</span></p> 
+    </section>    
+
+    <canvas class="webgl"></canvas>
+</body>
