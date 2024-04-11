@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Data Visualization Assignment</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- three.js importmap -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://ga.jspm.io/npm:three@0.158.0/build/three.module.js",
+                "OrbitControls": "https://ga.jspm.io/npm:three@0.158.0/examples/jsm/controls/OrbitControls.js",
+                "lil-gui": "https://ga.jspm.io/npm:lil-gui@0.19.1/dist/lil-gui.esm.js"
+            }
+        }
+    </script>
+
+    <!-- datavisualization 1 -->
+    <script src="script.js" type="module"></script>
+
+    <!-- datavisualization 2 -->
+    <script src="script2.js" type="module"></script>
+</head>
+<body>
+    <h1>Data Visualization - The Great Gatsby</h1>
+    <h2>Kieran Cassar</h2>
+
+    <p>The text that I chose to visualize was The Great Gatsby by Scott F. Fitzgerald. My reason for choosing this text was that it was one of the stories that I was familiar with on Project Gutenberg as I had read it previously for English class back in high school.</p>
+
+    <p>In order to interact with the visualizations, simply click the check boxes to hide or show each term or enable a feature such as rotating the camera. Clicking and dragging within the visualization windows will allow for them to be rotated around for a different point of view. </p>
+
+    <!-- datavisualization 1 -->
+    <div class="canvas-container">
+        <h2>Characters In The Great Gatsby</h2>
+        <canvas class="webgl"></canvas>
+        <div id="parent1"></div>
+        <p>Left click & drag to rotate. Right click & drag to move. Scroll to zoom.</p>
+    </div>
+
+    <p>The first visualization presents data about three different characters from the novel. These three characters are, Jay Gatsby in orange, Daisy Buchannon in purple, and George Wilson in cyan. They are represented by different coloured cubes that travel up the visualization. The height of each coloured cube corresponds to where the character is present in the story. At the bottom is the beginning of the book whereas the top is the end. </p>
+
+    <p>By viewing the amount of cubes and their position up the visualization, you can make out how often a character is present or mentioned throughout the story. In terms of Gatsby, he is the central character of the book and is present throughout its entirety. Although, he is somewhat absent during the beginning stages of the book as the narrator in the story, Nick Carraway, has yet to meet Gatsby in person until the night of his extravagant party. </p>
+
+    <p>Daisy has a spike near the end of the story as that is when she spends more time with Gatsby and causes the climax of the story. She is also absent near the middle of the story as those few chapters are more focused on other characters such as Gatsby.</p>
+
+    <p>George is a minor character throughout the book and is briefly present near the beginning when the more pivotal character, his wife Myrtle, is introduced. However, George later has a spike at the end of the story as he makes a comeback during the climax of the story, removing himself and the main character from the book. </p>
+
+    <p>Upon looking at the visualization as a whole, Gatsby and Daisy are much more important characters in the book as they appear more frequently than that of George. They also appear more together whereas George really only has a presence during the beginning and end of the book. </p>
+
+    <!-- datavisualization 2 -->
+    <div class="canvas-container">
+        <h2>Important Locations/Events In The Great Gatsby</h2>
+        <canvas class="webgl2"></canvas>
+        <div id="parent2"></div>
+        <p>Left click & drag to rotate. Right click & drag to move. Scroll to zoom.</p>
+    </div>
+
+    <p>	The second visualization differs from the first as it is now focused on locations and events from the book rather than its characters. Also, this visualizations features an added element of animation, which changes the shape of the tower of objects as well as becoming spheres rather than cubes. This makes the visualization more interesting to observe as it has less information to take in than the first one. The animation can be turned on or off which the check box. </p>
+
+    <p>This time, party is represented by red, pool is represented by green, and ashes is represented by violet. Just like the first visualization, the height of each coloured cube corresponds to where the term is present within the story.</p>
+
+    <p>Party’s biggest spot is at the start of the book as it is when Gatsby holds it and most of the characters meet. The term pool overlaps with party in the visualization as the pool is at Gatsby’s mansion which is used during his parties. It also makes an appearance at the end of the book as the pool is where the climax of the story occurs. </p>
+
+    <p>The term ashes refers to the Valley of Ashes, which is a location in the story. It only appears during the beginning of the book and is absent throughout the rest.</p>
+
+    <p>By comparing the data from both visualizations one can notice that George and ashes appear at similar parts in the story. This is because it is where Geroge lives and is the only real time his character is present. Also, a strange observation that can be made from the visualization is that ashes only appears at the beginning of the book but the characters still visit the Valley of Ashes even near the end. It must be that they stop referring to it by its name somewhere later on in the book. </p>
+    
+
+    <h3>Conclusion</h3>
+
+    <p>I would have liked to make my data visualizations be a little more different from each other rather than just changing up the colours and adding some animation qualities. I wanted to somehow change the shape and orientation of the objects in the ThreeJS scene but could not figure out how to do so. I also wanted to add some animation to the first visualization but couldn't get it to work properly. When I tried to be a little more creative I kept running into errors which ended up making my final product much less interesting and more simple than I wanted. I somewhat changed the shape when the animations are tuned on in visualization 2 but I still would have wanted the changes to be more drastic. </p>
+
+</body>
